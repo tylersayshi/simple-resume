@@ -1,0 +1,150 @@
+@import 'include-media';
+
+$black: #000;
+$white: #fff;
+
+$breakpoints: (
+  phone: 450px,
+  tablet: 768px,
+  desktop: 1024px,
+);
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+
+p, h3 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+ul {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  list-style-type: none;
+
+  li {
+    text-indent: -9px;
+    &::before {
+      content: '-  ';
+      font-size: 16px;
+      display: inline;
+    }
+  }
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 690px;
+  padding: 0.3in 0.5in;
+}
+
+.heading-line {
+  // prefixes added to work with html-pdf
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+a {
+  color: $black;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+header {
+  border-bottom: 3px solid $black;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+
+  .page-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a + a {
+    border-left: 2px solid $black;
+    margin-left: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@include media('>tablet') {
+  .box {
+    background-color: $white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    position: relative;
+    width: 790px;
+
+    &::before, &::after {
+      background: transparent;
+      bottom: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      content: ' ';
+      height: 10px;
+      left: 12px;
+      position: absolute;
+      width: 40%;
+      z-index: -1;
+    }
+
+    &::after {
+      left: auto;
+      right: 12px;
+      transform: skew(5deg) rotate(5deg);
+    }
+  }
+
+  body {
+    padding: 3rem;
+  }
+}
+
+@media print {
+  .wrap {
+    padding: 0;
+  }
+
+  html {
+    zoom: 0.8;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+}

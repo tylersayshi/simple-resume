@@ -1,0 +1,22 @@
+<header>
+  <div class="page-title">
+    <h1>{{ .name }}</h1>
+    <div class="address">{{ .address }}</div>
+  </div>
+  <div>
+    {{ with .email }}
+    <a href="mailto:{{ . }}">{{ . }}</a>
+    {{ end }}
+    {{ with .phone }}
+    <a href="tel:{{ . }}">({{substr . 0 3}}) {{substr . 3 3}}-{{substr . 6 4}}</a>
+    {{ end }}
+    {{ with .website}}
+    <a href="https://{{ . }}">{{ . }}</a>
+    {{ end }}
+    {{ with .github }}
+    <a href="https://github.com/{{ . }}"
+      ><i class="fab fa-github"></i> {{ . }}</a
+    >
+    {{ end }}
+  </div>
+</header>
