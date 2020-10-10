@@ -132,19 +132,7 @@ header {
 }
 
 @media print {
-  .wrap {
-    padding: 0;
-  }
-
   html {
-    zoom: 0.8;
-  }
-
-  a {
-    font-size: 14px;
-  }
-
-  h1 {
-    font-size: 45px;
+    zoom: 1.05;
   }
 }

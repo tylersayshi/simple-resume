@@ -23,7 +23,7 @@
         <h2>{{ .name }}</h2>
         <ul>
           {{ range .points }}
-          <li>{{ . }}</li>
+          <li>{{ . | markdownify }}</li>
           {{ end }}
         </ul>
       </section>
