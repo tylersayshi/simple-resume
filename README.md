@@ -1,7 +1,7 @@
 # Simple Resume Theme
 This theme is meant to create a web based, simple resume, that you can print.
 
-![Screenshot](/images/screenshot.png)
+![Screenshot](images/screenshot.png)
 
 # Features
  - Web based resume
