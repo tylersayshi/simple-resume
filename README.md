@@ -1,6 +1,8 @@
 # Simple Resume Theme
 This theme is meant to create a web based, simple resume, that you can print.
 
+![Screenshot](https://raw.githubusercontent.com/tylerjlawson/simple-resume/3495ff7d4351510595820d08a7f3b01733197e75/images/tn.png)
+
 ## Features
  - Web based resume
  - Printable
