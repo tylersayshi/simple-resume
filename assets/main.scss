@@ -6,7 +6,7 @@ $white: #fff;
 $breakpoints: (
   phone: 450px,
   tablet: 768px,
-  desktop: 1024px,
+  desktop: 1024px
 );
 
 body {
@@ -37,8 +37,8 @@ h3 {
   margin-bottom: 0;
 }
 
-
-p, h3 {
+p,
+h3 {
   margin-top: 0;
   margin-bottom: 0.25rem;
 }
@@ -71,14 +71,11 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 a {
-  color: $black;
-  display: inline-block;
-  font-size: 16px;
   text-decoration: none;
 }
 
@@ -86,6 +83,12 @@ header {
   border-bottom: 3px solid $black;
   margin-bottom: 15px;
   padding-bottom: 15px;
+
+  a {
+    color: $black;
+    display: inline-block;
+    font-size: 16px;
+  }
 
   .page-title {
     display: flex;
@@ -107,7 +110,8 @@ header {
     position: relative;
     width: 790px;
 
-    &::before, &::after {
+    &::before,
+    &::after {
       background: transparent;
       bottom: 12px;
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
