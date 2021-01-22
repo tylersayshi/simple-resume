@@ -1,16 +1,19 @@
 <section>
   <h2>Education</h2>
   {{ range . }}
-  <div class="school">
-    <div class="heading-line">
-      <h3>{{ .name }} - {{ .location }}</h3>
-      <h3>{{ .startdate }} - {{ if .enddate }}{{ .enddate }}{{ else }}Current{{ end }}</h3>
+    <div class="school">
+      <div class="heading-line">
+        <h3>{{ .name }} - {{ .location }}</h3>
+        <h3>
+          {{ .startdate }} -
+          {{ if .enddate }}{{ .enddate }}{{ else }}Current{{ end }}
+        </h3>
+      </div>
+      {{ range .degrees }}
+        <p>
+          <em>{{ . }}</em>
+        </p>
+      {{ end }}
     </div>
-    {{ range .degrees }}
-    <p>
-      <em>{{ . }}</em>
-    </p>
-    {{ end }}
-  </div>
   {{ end }}
 </section>
