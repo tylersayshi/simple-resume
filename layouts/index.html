@@ -4,30 +4,7 @@
       <div class="box">
         <div class="wrap">
           {{ partial "header.html" . }}
-          {{ with .objective }}
-            <div>
-              <h2>Objective</h2>
-              <p>
-                {{ . }}
-              </p>
-            </div>
-          {{ end }}
-          {{ with .schools }}
-            {{ partial "schools.html" . }}
-          {{ end }}
-          {{ with .experiences }}
-            {{ partial "experiences.html" . }}
-          {{ end }}
-          {{ range .info }}
-            <section>
-              <h2>{{ .name }}</h2>
-              <ul>
-                {{ range .points }}
-                  <li>{{ . | markdownify }}</li>
-                {{ end }}
-              </ul>
-            </section>
-          {{ end }}
+          {{ range .sections }} {{ partial "section.html" . }} {{ end }}
         </div>
       </div>
     {{ end }}

@@ -25,7 +25,7 @@ Once you have done this, you may use the `exampleSite` folder as an example for 
 theme = "simple-resume"
 ```
 
-Then you will need to replicate the data used in the `exampleSite/data/content.toml` file to fill in the fields for your resume.
+Then you will need to replicate the data used in the `exampleSite/data/content.yaml` file to fill in the fields for your resume.
 
 ## Print your Resume
 
