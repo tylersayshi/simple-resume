@@ -1,13 +1,7 @@
 <section>
   <h2>{{ .heading }}</h2>
   {{ with .body }}<p>{{ . }}</p>{{ end }}
-  {{ with .points }}
-    <ul>
-      {{ range . }}
-        <li>{{ . | markdownify }}</li>
-      {{ end }}
-    </ul>
-  {{ end }}
+  {{ partial "bullet-list.html" .points }}
   {{ range .subsections }}
     <div>
       {{ with .heading }}
@@ -24,13 +18,7 @@
           <em>{{ . }}</em>
         </p>
       {{ end }}
-      {{ with .points }}
-        <ul>
-          {{ range . }}
-            <li>{{ . | markdownify }}</li>
-          {{ end }}
-        </ul>
-      {{ end }}
+      {{ partial "bullet-list.html" .points }}
     </div>
   {{ end }}
 </section>

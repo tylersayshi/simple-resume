@@ -1,0 +1,16 @@
+{{ with . }}
+  <ul>
+    {{ $array := . }}
+    {{ range $index, $value := . }}
+      {{ if eq (printf "%T" $value) "string" }}
+        <li>
+          {{ $value | markdownify }}
+          {{ $next := (index $array (add 1 $index)) }}
+          {{ if eq (printf "%T" $next) "[]interface {}" }}
+            {{ partial "bullet-list.html" $next }}
+          {{ end }}
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+{{ end }}
