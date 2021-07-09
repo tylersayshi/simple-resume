@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "hugo-theme-demo-builder": "^1.0.4"
+  },
+  "scripts": {
+    "build": "hugo-theme-demo-builder"
+  }
+}
