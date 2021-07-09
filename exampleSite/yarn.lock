@@ -64,10 +64,10 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
-hugo-theme-demo-builder@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/hugo-theme-demo-builder/-/hugo-theme-demo-builder-1.0.4.tgz#222106812827abbbe2634e89d34d936cf4a87a4e"
-  integrity sha512-eZmWEOwg3ZcSaB7zm+sxeIqFAet4nF/ajVvcgPaQRzhQjbUKolr62MWs48i2ku5/VNbkJz1IlGbhCtE2kaiH7A==
+hugo-theme-demo-builder@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/hugo-theme-demo-builder/-/hugo-theme-demo-builder-1.0.6.tgz#c453f1547e0c4ca8448aaa676e8b0c67f444ffdf"
+  integrity sha512-Ko/wqRsL+9i3um1ph3Rlfs26Eiq6c0BoFJ5VlZZn1f88BI0rW+E3EV/JMHgQex1DdBrmRHDPKACUdUICFzlhGA==
   dependencies:
     concat-stream "^2.0.0"
     shelljs "^0.8.4"
