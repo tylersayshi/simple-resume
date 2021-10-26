@@ -5,7 +5,7 @@ description = "This is a simple resume that you can print or host on the web"
 homepage = "https://github.com/tylerjlawson/simple-resume/"
 tags = ["cv", "resume", "minimalist"]
 min_version = "0.41.0"
-demourl = "https://focused-varahamihira-bdb0c9.netlify.app/"
+demosite = "https://focused-varahamihira-bdb0c9.netlify.app/"
 
 [author]
   name = "Tyler Lawson"
