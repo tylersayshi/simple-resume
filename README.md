@@ -2,7 +2,7 @@
 
 This theme is meant to create a web based, simple resume, that you can print.
 
-![Screenshot](https://raw.githubusercontent.com/tylerjlawson/simple-resume/3495ff7d4351510595820d08a7f3b01733197e75/images/tn.png)
+![Screenshot](https://raw.githubusercontent.com/tylersayshi/simple-resume/3495ff7d4351510595820d08a7f3b01733197e75/images/tn.png)
 
 ## Features
 
@@ -16,7 +16,7 @@ This theme is meant to create a web based, simple resume, that you can print.
 hugo new site your-site-name # if you already have a site ignore this line and the next
 cd your-site-name
 cd themes
-git clone https://github.com/tylerjlawson/simple-resume.git
+git clone https://github.com/tylersayshi/simple-resume.git
 ```
 
 Once you have done this, you may use the `exampleSite` folder as an example for how to set your project up. The two main things to pay attention to is to first set this in your `config.toml` file:
